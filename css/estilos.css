@@ -1,0 +1,464 @@
+/*------------------------------------------- RESET ---------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1d1e1b;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------------------------------------------- FUENTES --------*/
+
+.Montserrat-thin {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .ibm-plex-sans-thin {
+    font-family: "Montserrat thin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+/*------------------------------------------- BARRA DE NAVEGACIÓN --------*/
+
+.navbar {
+    display: flex;
+    justify-content: end;
+}
+
+
+.nav-link img{
+    width: 20px;
+    display: flex;
+    padding-top: 5px;
+}
+
+
+.navbar-nav a{
+    color: #eaf27c;
+}
+
+.barra-navegacion {
+    font-family: "Montserrat thin";
+    font-weight: bold;
+    background-color:#1d1e1b;
+    padding: 25px 150px 10px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+
+@media (max-width: 900px){
+    .barra-navegacion{
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+}
+
+
+.menu {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+@media (max-width: 900px){
+    .menu{
+        flex-direction: column;
+        padding-top: 0px;
+    }
+}
+
+.menu li button {
+    border-color:#eaf27c;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.menu li button a {
+    background-color: transparent;
+    color:#eaf27c;
+    text-decoration: none;
+}
+
+.barra-navegacion img {
+    margin-top: 2px;
+    width: 50px;
+}
+
+
+
+
+.botones-rss img{
+    width: 50px;
+    
+}
+
+/*------------------------------------------- BIENVENIDA --------*/
+
+.bienvenida {
+    padding: 1rem 2rem;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+        align-items: flex-start; 
+}
+
+@media (max-width: 900px){
+    .bienvenida{
+        width: 500px;
+    }
+}
+
+/*------------------------------------------- CUERPO --------*/
+
+.main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-parrafo {
+    font-size: 2rem;
+    font-family: "Montserrat";
+    color: #eaf27c;
+}
+
+.texto-parrafo {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #f5f5f5
+}
+
+.enlaces-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 25px 0px;  
+}
+
+@media (max-width: 900px){
+    .enlaces-contacto{
+        flex-direction: column;
+    }
+}
+
+.graficos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.video-yt .video-blender{
+    border-radius: 10px;
+}
+
+.cuadro-texto {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro-grafico {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    border-color:#eaf27c;
+    background-color:#eaf27c;
+    border-radius: 10px;
+}
+
+.titulo-grafico{
+    font-family: "Montserrat";
+    font-weight: bold;
+    line-height: 1;
+    background-color:#eaf27c; 
+    color: #7f00c9; 
+}
+
+.parrafo-grafico {
+    padding-top: 10px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    background-color:#eaf27c;
+}
+
+.portafolio {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    .portafolio{
+        width: 400px;;
+    }
+}
+
+
+
+.botones {
+     /*FLEXBOX*/
+     padding: 3rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+     gap: 1rem;
+}
+
+@media (max-width: 900px){
+    .botones{
+        flex-direction: column;
+    }
+}
+
+.boton-porta {
+    /*Estilos de boton*/
+    border-color: transparent;
+    color: #eaf27c;
+    font-family: "Montserrat thin";
+    font-size: 15px;
+}
+
+.boton-porta img {
+    width: 100px;
+    background-color: #eaf27c;
+    border-radius: 100%;
+}
+
+
+/*------------------------------------------------- PLANES Y PRECIOS --------------------------------------------*/
+
+
+.tituloPlanes{
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    color: #eaf27c;
+}
+
+
+.planesPrecios {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding-bottom: 25px;
+    color: #eaf27c;
+}
+
+
+
+.planBasico {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    grid-area: quien;
+    font-family: "Montserrat";
+    
+    font-size: 1rem;
+    padding: 15px 0px 15px 0px;
+    line-height: 1.5;
+    
+    
+}
+
+.planProfesional {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: "Montserrat";
+    
+    font-size: 1rem;
+    padding: 15px 0px 15px 0px;
+    
+    
+}
+
+.planEmpresarial {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: "Montserrat";
+    
+    font-size: 1rem;
+    padding: 15px 0px 15px 0px;
+    
+}
+
+.planesPrecios ul {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #f5f5f5;
+    font-weight: 400;
+}
+
+
+@media (max-width: 900px){
+    .planesPrecios{
+        flex-direction: column;
+    }
+}
+
+
+
+.clientes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    color: #f5f5f5;
+    font-family: "Montserrat thin";
+    font-size: 7px;
+    gap: 20px;
+}
+
+.cl-ilust img {
+    width: 200px;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+
+
+.client-model {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    color: #f5f5f5;
+    font-family: "Montserrat thin";
+    font-size: 7px;
+    gap: 20px;
+}
+
+.client-model img {
+    width: 200px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.info {
+    font-family: "Montserrat thin";
+    font-size: 15px;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.contenedor {
+    padding: 1rem 2rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+        "logo       quien       servicios "
+        "logo       productos   contacto";
+}
+
+@media (max-width: 900px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+
+.contenedor img {
+    border-radius: 15px;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    grid-area: logo;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    grid-area: servicios;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.quien {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    grid-area: quien;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: productos;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    grid-area: contacto;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 2rem;
+}
